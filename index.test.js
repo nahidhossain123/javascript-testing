@@ -102,5 +102,10 @@ test.only('Array Matchers',()=>{
     expect(()=>openInvalidFile()).toThrow(/file not found/)
  })
 
-
-
+//function mocking 
+//fake version of functions or objects that can be used to simulate behavior of real components  
+test.only('Drinks Return ',()=>{
+    const drink = jest.fn(()=>true)
+    drink()
+    expect(drink).toHaveReturnedWith(true)
+})
