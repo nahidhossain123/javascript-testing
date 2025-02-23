@@ -14,3 +14,11 @@ test('Failed Data Using Promise',async()=>{
     expect(error).toBe('error occured')
    }
 })
+
+test('Async Test Reject',async()=>{
+   await expect(fetchData(true)).rejects.toMatch('error occured')
+})
+
+test('Async Test Success',async()=>{
+   await expect(fetchData()).resolves.toMatch('success')
+})
