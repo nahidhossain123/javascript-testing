@@ -1,0 +1,50 @@
+#1 what is software testing?
+ Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do
+
+#2 Types of software testing
+ i. Manual
+  a. Exploratory
+  b. Ad-hoc
+  
+ii.Automation---using automated tools to execute test on the software e.g: Jest,
+  a. White Box
+    i. Unit Testing 
+    ii. Integration Testing 
+    
+  b. Black Box
+    i.Security Testing
+    
+  c. Gary Box
+    i. E2E Testing (Detox)
+
+#3 Set up a project and install jest
+ npm install --save-dev jest
+
+4# Add a test script package.json file
+"scripts": {
+  "test": "jest"
+}
+
+5# Create a file with siple function multiply index.js
+<code>
+  #index.js
+  function multiply(a,b){
+   return a*b
+  }
+  module.exports = multiply
+</code>
+
+#6 Create a test file with a same name but .test.js sufix (e.g., index.test.js )
+<code>
+  #index.test.js
+  const multiply = require('./index.js')
+  //test suite
+  test('2 and 5 multipy equal 10',()=>{
+    expect(multiply(2,5)).toBe(10) //checking exact equality
+  )
+  //test() A Jest function that defines a single test case.
+  //accepts two argument one description and one function 
+  //expect(): A function used for making assertions. It wraps the code you are testing.
+  //toBe(): A "matcher" that compares the result to the expected value. 
+</code>
+    
