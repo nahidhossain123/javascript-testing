@@ -28,11 +28,13 @@
    </ol>
   </ol>
  </ol>
+ 
 #3 Setup a project
  <code>
   npm init -y
  </code>
-#4 Install Jest as a dev dependency
+ 
+ #4 Install Jest as a dev dependency
  <code>
   npm install --save-dev jest
  </code>
