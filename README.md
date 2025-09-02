@@ -19,7 +19,7 @@
    <ol>
     <li>Security Testing</li>
    </ol>
-    <li>Gary Box</li>
+    <li>Gray Box</li>
    <ol>
     <li>E2E Testing (Detox)</li>
    </ol>
