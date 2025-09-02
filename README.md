@@ -8,6 +8,7 @@
     <li>Exploratory</li>
     <li>Ad-hoc</li>
    </ol>
+  
   <li>Automation---using automated tools to execute test on the software e.g: Jest,</li>
   <ol>
    <li>White Box</li>
@@ -15,25 +16,35 @@
     <li>Unit Testing</li>
     <li>Integration Testing </li>
    </ol>
+   
    <li>Black Box</li>
    <ol>
     <li>Security Testing</li>
    </ol>
+   
     <li>Gray Box</li>
    <ol>
     <li>E2E Testing (Detox)</li>
    </ol>
   </ol>
  </ol>
-#3 Set up a project and install jest
- npm install --save-dev jest
+#3 Setup a project
+ <code>
+  npm init -y
+ </code>
+#4 Install Jest as a dev dependency
+ <code>
+  npm install --save-dev jest
+ </code>
 
-4# Add a test script package.json file
+#5 Add a test script package.json file
+<code>
 "scripts": {
   "test": "jest"
 }
+</code>
 
-5# Create a file with siple function multiply index.js
+#6 Create a file with siple function multiply index.js
 <code>
   #index.js
   function multiply(a,b){
@@ -42,7 +53,7 @@
   module.exports = multiply
 </code>
 
-#6 Create a test file with a same name but .test.js sufix (e.g., index.test.js )
+#7 Create a test file with a same name but .test.js sufix (e.g., index.test.js )
 <code>
   #index.test.js
   const multiply = require('./index.js')
