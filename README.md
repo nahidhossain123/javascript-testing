@@ -22,7 +22,7 @@
     <li>Security Testing</li>
    </ol>
    
-    <li>Gray Box</li>
+   <li>Gray Box</li>
    <ol>
     <li>E2E Testing (Detox)</li>
    </ol>
