@@ -2,21 +2,29 @@
  Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do
 
 #2 Types of software testing
- i. Manual
-  a. Exploratory
-  b. Ad-hoc
-  
-ii.Automation---using automated tools to execute test on the software e.g: Jest,
-  a. White Box
-    i. Unit Testing 
-    ii. Integration Testing 
-    
-  b. Black Box
-    i.Security Testing
-    
-  c. Gary Box
-    i. E2E Testing (Detox)
-
+ <ol>
+  <li>Manual</li>
+   <ol>
+    <li>Exploratory</li>
+    <li>Ad-hoc</li>
+   </ol>
+  <li>Automation---using automated tools to execute test on the software e.g: Jest,</li>
+  <ol>
+   <li>White Box</li>
+   <ol>
+    <li>Unit Testing</li>
+    <li>Integration Testing </li>
+   </ol>
+   <li>Black Box</li>
+   <ol>
+    <li>Security Testing</li>
+   </ol>
+    <li>Gary Box</li>
+   <ol>
+    <li>E2E Testing (Detox)</li>
+   </ol>
+  </ol>
+ </ol>
 #3 Set up a project and install jest
  npm install --save-dev jest
 
