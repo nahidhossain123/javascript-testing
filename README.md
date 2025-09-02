@@ -1,5 +1,5 @@
 #1 what is software testing?
- Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do
+ <p>Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do</p>
 
 #2 Types of software testing
  <ol>
@@ -29,24 +29,34 @@
   </ol>
  </ol>
  
-#3 Setup a project
+#3 Create a new directory for your project
+  <code>
+   mkdir javascript-test-project
+   cd javascript-test-project
+  </code>
+  
+#3 Initialize npm
+<p>This creates a package.json file to manage your project's dependencies.</p>
   <code>
    npm init -y
   </code>
  
- #4 Install Jest as a dev dependency
+#4 Install Jest
+<p>Install Jest as a development dependency.</p>
   <code>
    npm install --save-dev jest
   </code>
 
-#5 Add a test script package.json file
+#5 Add a test script to your <bold>package.json</bold> file
+<p>Open your package.json file and add the following to the "scripts" section to enable the npm test command.</p>
  <code>
  "scripts": {
    "test": "jest"
  }
  </code>
 
-#6 Create a file with siple function multiply index.js
+#6 Write the code to be tested
+<p>Create a new file named index.js or anything you want with a simple function you can test. This function will multiply two numbers. </p>
  <code>
    #index.js
    function multiply(a,b){
@@ -55,7 +65,8 @@
    module.exports = multiply
  </code>
 
-#7 Create a test file with a same name but .test.js sufix (e.g., index.test.js )
+#7 Write your first test
+<p>Create a test file with a same name but .test.js sufix (e.g., index.test.js )</p>
  <code>
    #index.test.js
    const multiply = require('./index.js')
@@ -67,5 +78,10 @@
    //accepts two argument one description and one function 
    //expect(): A function used for making assertions. It wraps the code you are testing.
    //toBe(): A "matcher" that compares the result to the expected value. 
+ </code>
+
+ #7 Run your test
+ <code>
+  npm test
  </code>
     
