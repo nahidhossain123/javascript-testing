@@ -86,7 +86,7 @@
  </code>
 
  #10 Most Common Matchers
- Here are some of the most common matchers used in JavaScript testing frameworks like Jest, Vitest, and Jasmine, categorized by what they assert. 
+ <p>Here are some of the most common matchers used in JavaScript testing frameworks like Jest, Vitest, and Jasmine, categorized by what they assert.</p>
  <ol>
   <li>Equality</li>
    <ol>
