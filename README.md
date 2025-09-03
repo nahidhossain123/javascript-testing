@@ -4,7 +4,7 @@
 </li>
  Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do
 
-<li>Types of software testing</li>
+<li><h3>Types of software testing</h3></li>
  <ol>
   <li>Manual</li>
    <ol>
@@ -32,25 +32,25 @@
   </ol>
  </ol>
  
-<li>Create a new directory for your project</li>
+<li><h3>Create a new directory for your project</h3></li>
   <code>
    mkdir javascript-test-project
    cd javascript-test-project
   </code>
   
-<li>Initialize npm</li>
+<li><h3>Initialize npm</h3></li>
 <p>This creates a package.json file to manage your project's dependencies.</p>
   <code>
    npm init -y
   </code>
  
-<li>Install Jest</li>
+<li><h3>Install Jest</h3></li>
 <p>Install Jest as a development dependency.</p>
   <code>
    npm install --save-dev jest
   </code>
 
-<li>Add a test script to your <bold>package.json</bold> file</li>
+<li><h3>Add a test script to your <bold>package.json</bold> file</h3></li>
 <p>Open your package.json file and add the following to the "scripts" section to enable the npm test command.</p>
  <code>
  "scripts": {
@@ -58,7 +58,7 @@
  }
  </code>
 
-<li>Write the code to be tested</li>
+<li><h3>Write the code to be tested</h3></li>
 <p>Create a new file named index.js or anything you want with a simple function you can test. This function will multiply two numbers. </p>
  <code>
    #index.js
@@ -68,7 +68,7 @@
    module.exports = multiply
  </code>
 
-<li>Write your first test</li>
+<li><h3>Write your first test</h3></li>
 <p>Create a test file with a same name but .test.js sufix (e.g., index.test.js )</p>
  <code>
    #index.test.js
@@ -83,12 +83,12 @@
    //toBe(): A "matcher" that compares the result to the expected value. 
  </code>
 
- <li> Run your test</li>
+ <li><h3> Run your test</h3></li>
  <code>
   npm test
  </code>
 
- <li> Most Common Matchers</li>
+ <li><h3>Most Common Matchers</h3></li>
  <p>Here are some of the most common matchers used in JavaScript testing frameworks like Jest, Vitest, and Jasmine, categorized by what they assert.</p>
  <ol>
   <li>Equality</li>
