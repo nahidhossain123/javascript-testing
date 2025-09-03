@@ -95,6 +95,7 @@
     <li>.toEqual(value): Checks for "deep" equality, recursively comparing the contents of objects and arrays. Use this when the values and properties should match, but the references might be differen</li>
     <li>.toStrictEqual(value): A stricter version of .toEqual(), ensuring both the type and structure of objects are identical.</li>
    </ol>
+  
   <li>Truthiness---These matchers help test values based on their "truthiness" in a boolean context.</li>
    <ol>
     <li> .toBeNull(): Matches only null.</li>
@@ -103,6 +104,7 @@
     <li>.toBeTruthy(): Matches anything that an if statement considers true.</li>
     <li>.toBeFalsy(): Matches anything that an if statement considers false.</li>
    </ol>
+   
    <li>Numbers</li>
    <ol>
     <li>.toBeGreaterThan(number): Checks if a value is greater than another.</li>
@@ -111,6 +113,7 @@
     <li>.toBeLessThanOrEqual(number): Checks if a value is less than or equal to another.</li>
     <li>.toBeCloseTo(number, numDigits): For comparing floating-point numbers where you might not need exact precision. </li>
    </ol>
+   
    <li>Strings</li>
    <ol>
     <li>.toMatch(regexp): Checks if a string matches a given regular expression.</li>
@@ -120,11 +123,13 @@
     <li>.toContain(item): Checks if an item is in an array or a substring is in a string.</li>
     <li>.toHaveLength(number): Checks the number of items in an array or characters in a string.</li>
    </ol>
+   
   <li>Objects</li>
    <ol>
     <li>.toHaveProperty(keyPath, value): Checks if an object has a certain property and, optionally, if it has a specific value.</li>
     <li>.toMatchObject(object): Checks if a JavaScript object matches a subset of the properties of an object. </li>
    </ol>
+   
   <li>Negating Matchers</li>
    <ol>
     <li>You can reverse the logic of any matcher by chaining .not. </li>
