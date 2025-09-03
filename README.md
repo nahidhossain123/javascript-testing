@@ -1,7 +1,8 @@
-#1 what is software testing?
+<ol>
+<li>what is software testing?</li>
  Software testing is the process of evaluating and verifying that a software product or application does what it's supposed to do
 
-#2 Types of software testing
+<li>Types of software testing</li>
  <ol>
   <li>Manual</li>
    <ol>
@@ -29,25 +30,25 @@
   </ol>
  </ol>
  
-#3 Create a new directory for your project
+<li>Create a new directory for your project</li>
   <code>
    mkdir javascript-test-project
    cd javascript-test-project
   </code>
   
-#4 Initialize npm
+<li>Initialize npm</li>
 <p>This creates a package.json file to manage your project's dependencies.</p>
   <code>
    npm init -y
   </code>
  
-#5 Install Jest
+<li>Install Jest</li>
 <p>Install Jest as a development dependency.</p>
   <code>
    npm install --save-dev jest
   </code>
 
-#6 Add a test script to your <bold>package.json</bold> file
+<li>Add a test script to your <bold>package.json</bold> file</li>
 <p>Open your package.json file and add the following to the "scripts" section to enable the npm test command.</p>
  <code>
  "scripts": {
@@ -55,7 +56,7 @@
  }
  </code>
 
-#7 Write the code to be tested
+<li>Write the code to be tested</li>
 <p>Create a new file named index.js or anything you want with a simple function you can test. This function will multiply two numbers. </p>
  <code>
    #index.js
@@ -65,7 +66,7 @@
    module.exports = multiply
  </code>
 
-#8 Write your first test
+<li>Write your first test</li>
 <p>Create a test file with a same name but .test.js sufix (e.g., index.test.js )</p>
  <code>
    #index.test.js
@@ -80,12 +81,12 @@
    //toBe(): A "matcher" that compares the result to the expected value. 
  </code>
 
- #9 Run your test
+ <li> Run your test</li>
  <code>
   npm test
  </code>
 
- #10 Most Common Matchers
+ <li> Most Common Matchers</li>
  <p>Here are some of the most common matchers used in JavaScript testing frameworks like Jest, Vitest, and Jasmine, categorized by what they assert.</p>
  <ol>
   <li>Equality</li>
@@ -130,4 +131,5 @@
     <code> expect(2 + 2).not.toBe(5);</code>
    </ol>
  </ol>
+</ol>
     
